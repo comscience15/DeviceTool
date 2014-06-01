@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zynga.devicetool"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.zynga.devicetool.app.AppData"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zynga.devicetool.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.DeviceInfo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.DEVICEINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+  
+        <activity
+            android:name="com.zynga.devicetool.InstalledApp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.INSTALLEDAPP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.ApkInfo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.APKINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!--  <activity
+            android:name="com.zynga.devicetool.app.AppData"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.app.APPDATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> -->
+        
+        <activity
+            android:name="com.zynga.devicetool.ApkAdapter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.APKADAPTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.ApkList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.zynga.devicetool.APKLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.AboutMe"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter> 
+                <action android:name="com.zynga.devicetool.ABOUTME" />
+                
+                <category android:name="android.intent.category.DEFAULT"  />              
+            </intent-filter>       
+        </activity>
+        
+        <activity
+            android:name="com.zynga.devicetool.ViewLogcat"
+            android:label="@string/app_name" >
+            <intent-filter> 
+                <action android:name="com.zynga.devicetool.VIEWLOGCAT" />
+                <category android:name="android.intent.category.DEFAULT"  />              
+            </intent-filter>       
+        </activity>
+        
+    </application>
+
+</manifest>

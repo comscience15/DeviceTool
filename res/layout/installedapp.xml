@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    
+    <TextView
+	        android:id="@+id/installedApp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/LightSalmon"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="14dp"
+	        android:text="Installed Application list"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    <ListView
+	        android:id="@+id/applist"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/installedApp" />
+
+</RelativeLayout>
+
+
+	        
+
+
+
